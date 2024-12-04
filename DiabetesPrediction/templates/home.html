@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <style type=text/css>
+    div{
+            color:#ff4d6b;
+    }
+    .main{
+            position: fixed;
+            top: 100px;
+            left: 450px;
+            width: 550px;
+            font-family: standard-block, emoji ;
+            background-color:#ffffff;
+            border-radius: 10px;
+            align-items: center;
+            padding: 1%;
+        }
+    h1{
+          color: 'black';
+          font-family: standard-block, emoji ;
+          font-size: 40px;
+          font-weight: bold;
+          margin-top: 50px;
+    }
+    h2{
+         color: 'white';
+         font-family: standard-block, emoji ;
+         font-size: 15px;
+         font-weight: bold;
+         margin-top: 600px;
+    }
+
+        body{
+        background-color:rgba(255, 255, 255, 0);
+        }
+    input[type=submit]{
+        background-color: #ff4d6b;
+        border: 2px;
+        color: white;
+        font-family: standard-block, emoji ;
+        font-size: 15px;
+        padding: 16px 32px;
+        cursor: pointer;
+        margin-top: 40px; 
+
+    }
+
+    </style>
+</head>
+<body>
+    <div align="center" style="background-color: #f3f3f3"; class="main">
+        <h1>
+            Welcome to the Diabetes Prediction System !
+        </h1>
+        <img src="C:\Users\Administrator\Downloads\doctor_icon.jpg" alt="A Doctor" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);">
+        <form action ="predict">
+            <input type ="submit" value="Know Your Status" style="border-radius: 5px;" >
+        </form>
+
+    </div>
+</body>
+</html>

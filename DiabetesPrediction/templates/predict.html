@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <style>
+        body{
+            background-size: cover;
+            background-color: url("C:\Users\Administrator\Downloads\OIP.jpg")
+
+        }
+
+        .main{
+            position: fixed;
+            top: 100px;
+            left: 450px;
+            width: 550px;
+            font-family: standard-block, emoji ;
+            background-color:#ffffff;
+            border-radius: 10px;
+            align-items: center;
+            padding: 1%;
+        }
+        h1{
+            color: #0086b3;
+            font-family: standard-block, emoji ;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        input[type=submit]{
+            background-color: #4dc3ff;
+            border: 2px;
+            color: white;
+            font-family: standard-block, emoji ;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 45px;
+        }
+        p {
+             text-align: center;
+          }
+    </style>
+</head>
+<body>
+
+   <div align="left" style="background-color: #e4e3e3"; class="main">
+       <h1>Enter The Following Information!</h1>
+    <form action="result">
+        <div align="left" class="field">
+        <label for="entry1">Pregnancies :</label><br>
+        <input type="text" id="entry1" name="n1" size="70" style="border-radius: 5px;" required>
+        <br>
+        </div><br>
+
+        <div align="left" class="field">
+        <label for="entry2">Glucose :</label><br>
+        <input type="text" id="entry2" name="n2" size="70" style="border-radius: 5px;" required>
+        <br>
+        </div><br>
+
+        <div align="left" class="field">
+        <label for="entry3">Blood Pressure :</label><br>
+        <input type="text" id="entry3" name="n3" size="70" style="border-radius: 5px;" required>
+        <br>
+        </div><br>
+
+        <div align="left" class="field">
+        <label for="entry4">Skin thinkness :</label><br>
+        <input type="text" id="entry4" name="n4" size="70" style="border-radius: 5px;" required>
+        <br>
+        </div><br>
+
+        <div align="left" class="field">
+        <label for="entry4">Insulin :</label><br>
+        <input type="text" id="entry4" name="n5" size="70" style="border-radius: 5px;" required>
+        <br>
+        </div><br>
+
+        <div align="left" class="field">
+        <label for="entry4">BMI :</label><br>
+        <input type="text" id="entry4" name="n6" size="70" style="border-radius: 5px;" required>
+        <br>
+        </div><br>
+
+        <div align="left" class="field">
+        <label for="entry4">Diabetes Pedigree Function :</label><br>
+        <input type="text" id="entry4" name="n7" size="70" style="border-radius: 5px;" required>
+        <br>
+        </div><br>
+
+        <div align="left" class="field">
+        <label for="entry5">Age :</label><br>
+        <input type="text" id="entry5" name="n8" size="70" style="border-radius: 5px;" required>
+        <br>
+        </div>
+
+        <p><input type ="submit" value="Submit" style="border-radius: 5px;"></p>
+        
+    </form>
+    <p> Result:  {{result2}} </p>
+      
+   </div>
+</body>
+</html>
