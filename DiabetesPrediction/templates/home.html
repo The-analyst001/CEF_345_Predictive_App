@@ -1,124 +1,68 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to the Diabetes Prediction System</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            overflow: hidden;
-        }
+    <title>Home</title>
 
-        .main {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            max-width: 600px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
+    <style type=text/css>
+    div{
+            color:#ff4d6b;
+    }
+    .main{
+            position: fixed;
+            top: 100px;
+            left: 450px;
+            width: 550px;
+            font-family: standard-block, emoji ;
+            background-color:#ffffff;
             border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 1;
+            align-items: center;
+            padding: 1%;
         }
+    h1{
+          color: 'black';
+          font-family: standard-block, emoji ;
+          font-size: 40px;
+          font-weight: bold;
+          margin-top: 50px;
+    }
+    h2{
+         color: 'white';
+         font-family: standard-block, emoji ;
+         font-size: 15px;
+         font-weight: bold;
+         margin-top: 600px;
+    }
 
-        h1 {
-            color: #333;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 20px;
+        body{
+        background-color:rgba(255, 255, 255, 0);
         }
+    input[type=submit]{
+        background-color: #ff4d6b;
+        border: 2px;
+        color: white;
+        font-family: standard-block, emoji ;
+        font-size: 15px;
+        padding: 16px 32px;
+        cursor: pointer;
+        margin-top: 40px; 
 
-        img {
-            width: 300px;
-            border-radius: 50%;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
+    }
 
-        input[type="submit"] {
-            background-color: #ff4d6b;
-            border: none;
-            color: white;
-            font-size: 16px;
-            padding: 12px 24px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #e43a59;
-        }
-
-        .animation {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
-
-        .dot {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: #ff4d6b;
-            border-radius: 50%;
-            animation: move 3s infinite;
-        }
-
-        @keyframes move {
-            0% {
-                transform: translateY(0) rotate(0deg);
-            }
-            50% {
-                transform: translateY(-100px) rotate(180deg);
-            }
-            100% {
-                transform: translateY(0) rotate(360deg);
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="main">
-        <h1>Welcome to the Diabetes Prediction System!</h1>
-        <img src="C:\Users\Administrator\Desktop\Diabetes Prediction\static\DiabetesPrediction\images\Picture.jpg" alt="A Doctor">
-        <form action="predict">
-            <input type="submit" value="Know Your Status" id="statusButton">
+    <div align="center" style="background-color: #02c2ed"; class="main">
+        <h1>
+            Welcome to the Diabetes Prediction System !
+        </h1>
+        <img src="C:\Users\Administrator\Downloads\doctor_icon.jpg" alt="A Doctor" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);">
+        <form action ="predict">
+            <input type ="submit" value="Know Your Status" style="border-radius: 5px;" >
         </form>
-    </div>
-
-    <div class="animation">
-        <!-- Add animated dots here -->
-        <div class="dot" style="top: 30%; left: 20%;"></div>
-        <div class="dot" style="top: 70%; left: 50%;"></div>
-        <div class="dot" style="top: 40%; left: 80%;"></div>
-        <div class="dot" style="top: 60%; left: 30%;"></div>
-        <div class="dot" style="top: 20%; left: 70%;"></div>
-        <div class="dot" style="top: 100%; left: 10%;"></div>
-        <div class="dot" style="top: 80%; left: 90%;"></div>
 
     </div>
-
-    <script>
-        const statusButton = document.getElementById('statusButton');
-        statusButton.addEventListener('mouseover', function() {
-            statusButton.style.backgroundColor = '#e43a59';
-            statusButton.value = 'Check Now!';
-        });
-
-        statusButton.addEventListener('mouseout', function() {
-            statusButton.style.backgroundColor = '#ff4d6b';
-            statusButton.value = 'Know Your Status';
-        });
-    </script>
 </body>
 </html>
